@@ -1,0 +1,1175 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.background-image {
+    background-image: url('https://i.ibb.co/F719L82/Hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    content: " ";
+    width: 100vw;
+    height: 962px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.background-image::after {
+    background-color: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    content: " ";
+    width: 100vw;
+    height: 962px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+ul {
+    display: inline-block;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.material-icons {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.logo-image {
+    width: 82px;
+    max-height: 31px;
+    height: auto;
+}
+
+.temple-image {
+    width: 66px;
+    max-height: 66px;
+    height: auto;
+}
+
+.guide-image {
+    width: 65px;
+    max-height: 65px;
+    height: auto;
+}
+
+.business-image {
+    width: 58px;
+    max-height: 58px;
+    height: auto;
+}
+
+.fuji-image {
+    width: 619px;
+    max-height: 354px;
+    height: auto;
+}
+
+.kyoto-image {
+    width: 635px;
+    max-height: 354px;
+    height: auto;
+}
+
+.tokoyo-image,
+.nigata-image,
+.sapporo-image {
+    width: 415px;
+    max-height: 283px;
+    height: auto;
+}
+
+.tottori-image,
+.arashiyama-image {
+    width: 597px;
+    max-height: 354px;
+    height: auto;
+}
+
+.nagoya-image,
+.niigita-image,
+.osaka-image,
+.saitama-image,
+.ueno-image,
+.shibuya-image {
+    width: 386px;
+    height: 377px;
+}
+
+.festival-image {
+    width: 100vw;
+    height: auto;
+}
+
+.footer-logo-image {
+    width: 170px;
+}
+
+img {
+    line-height: 0;
+}
+
+
+/* _____________________HERO____________________ */
+
+header {
+    overflow: auto;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    margin: 56px 167px 0 191px;
+    padding-bottom: 20px;
+}
+
+.nav__logo {
+    display: inline-block;
+    margin: 0;
+    line-height: 0;
+}
+
+.nav__link-container {
+    float: right;
+    margin: 0;
+    margin-top: 4px;
+}
+
+.nav__li {
+    display: inline-block;
+}
+
+.nav__link {
+    color: #fff;
+    margin: 0 41px;
+    position: relative;
+    line-height: 0;
+    transition: 1s ease all;
+    transform-origin: left;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: #fff;
+}
+
+.nav__link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -7px;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+
+.nav__link:hover::before {
+    transform: scaleX(1);
+}
+
+.home {
+    overflow: hidden;
+    margin: 176px 191px 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1284px;
+    width: auto;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 619px;
+    width: auto;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.desc {
+    max-width: 546px;
+    width: auto;
+    margin: 22px 0 0;
+    line-height: 24px;
+}
+
+.home .container {
+    overflow: hidden;
+}
+
+.input__container {
+    display: inline-block;
+    position: relative;
+    margin: 50px 61px 0 0;
+}
+
+.oval {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.input {
+    font-size: 18px;
+    display: inline-block;
+    width: 297px;
+    padding-bottom: 22px;
+    padding-left: 40px;
+    margin-right: -40px;
+    color: #fff;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input:focus::placeholder {
+    opacity: 0;
+}
+
+.input::placeholder {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    background: none;
+    border: 0;
+}
+
+.primary-button {
+    background-color: #1b7dff;
+    color: #fff;
+    transition: background 0.2s;
+}
+
+.primary-button:hover {
+    background-color: #045fd6;
+    color: #fff;
+}
+
+.search-icon {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transition: 0.5s;
+    margin: 0;
+    line-height: 0;
+}
+
+.search-button {
+    display: inline-block;
+    padding: 20px 54.5px;
+    margin-top: 50px;
+    position: relative;
+    transition: 0.5s, outline 0s, outline-offset 0s;
+}
+
+.search-button:hover {
+    padding: 20px 34.5px 20px 74.5px;
+    outline: 1px solid #fff;
+    outline-offset: -1px;
+}
+
+.search-button:hover .search-icon {
+    opacity: 100%;
+    visibility: visible;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    margin: 0;
+    line-height: 0;
+}
+
+@media(max-width: 1018.99px) {
+    header {
+        margin: 56px 80px 0 80px;
+    }
+    .nav__logo {
+        display: inline-block;
+        line-height: 0;
+    }
+    .nav__link-container {
+        float: right;
+    }
+    .nav__link {
+        margin: 0 41px;
+    }
+    .home {
+        margin: 176px 80px 0;
+    }
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media(max-width:800px) {
+    header {
+        margin: 56px 50px 0 50px;
+    }
+    .nav__link {
+        margin: 40px 21px;
+    }
+    .container {
+        max-width: 700px;
+    }
+    .home {
+        margin: 126px 50px;
+    }
+}
+
+@media(max-width:730px) {
+    header {
+        margin: 56px 50px 0 50px;
+    }
+    .nav__link-container {
+        float: none;
+        display: block;
+        max-width: max-content;
+        width: auto;
+        margin: 60px auto 0;
+        padding: 0;
+    }
+    .nav__link {
+        margin: 40px 31px;
+    }
+    .container {
+        max-width: 700px;
+    }
+    .home {
+        margin: 126px 50px;
+    }
+}
+
+@media (max-width:635px) {
+    .nav__link {
+        margin: 40px 21px;
+    }
+    .input__container {
+        display: block;
+        width: max-content;
+        margin: 50px auto 0;
+    }
+    .search-button {
+        display: block;
+        width: max-content;
+        margin: 50px auto;
+    }
+}
+
+@media(max-width:502px) {
+    header {
+        margin: 30px 30px 0 30px;
+    }
+    .nav__link-container {
+        margin: 60px auto 0;
+    }
+    .nav__link {
+        margin: 40px 16px;
+    }
+    .container {
+        max-width: 450px;
+    }
+    .home {
+        margin: 76px 30px;
+    }
+}
+
+@media(max-width:410px) {
+    header {
+        margin: 30px 20px 0 20px;
+    }
+    .nav__link-container {
+        margin: 30px auto 0;
+    }
+    .nav__link {
+        margin: 40px 10px;
+    }
+    .container {
+        max-width: 350px;
+    }
+    .home {
+        margin: 56px 20px;
+    }
+    .header {
+        font-size: 40px;
+        max-width: 350px;
+    }
+    .desc {
+        max-width: 350px;
+    }
+}
+
+@media(max-width: 360px) {
+    header {
+        margin: 30px 10px 0 10px;
+    }
+    .nav__link {
+        margin: 40px 5px;
+    }
+}
+
+
+/* ____________________BENEFITS________________ */
+
+.benefits {
+    margin: 150px auto;
+    min-height: 655px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0px 2px 20px 0px rgba(21, 24, 36, 0.16);
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(21, 24, 36, 0.16);
+    -moz-box-shadow: 0px 2px 20px 0px rgba(21, 24, 36, 0.16);
+}
+
+.benefits__title {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 93px 99px;
+}
+
+.benefits__card-container {
+    max-width: max-content;
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.benefits__card {
+    max-width: 317px;
+    width: auto;
+    text-align: left;
+    display: inline-block;
+    margin: 37px;
+}
+
+.card__title {
+    margin: 37px 0 0;
+}
+
+.card__desc {
+    margin: 26px 0 0;
+    line-height: 24px;
+}
+
+.card__link {
+    vertical-align: text-top;
+    padding: 0 10px;
+    display: inline-block;
+    margin: 39px 0 0 0;
+    color: #006dfe;
+}
+
+.card__link:hover {
+    color: #045fd6;
+}
+
+.east-icon {
+    font-size: 16px;
+    vertical-align: text-bottom;
+    transition: 0.3s ease-in;
+}
+
+.card__link:hover .east-icon {
+    transform: translateX(10px);
+}
+
+.link-text {
+    margin-right: 10px;
+}
+
+@media(max-width: 1300px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .benefits {
+        text-align: center;
+    }
+    .container {
+        max-width: 1100px;
+    }
+    .benefits__card {
+        max-width: 257px;
+        margin: 37px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .container {
+        max-width: 1000px;
+    }
+    .benefits__card {
+        max-width: 257px;
+        margin: 27px;
+    }
+    .benefits__title {
+        margin-left: 50px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .container {
+        max-width: 900px;
+    }
+    .benefits__card {
+        max-width: 157px;
+        margin: 27px;
+    }
+}
+
+@media(max-width: 900px) {
+    .benefits {
+        margin: 50px auto;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+    .container {
+        max-width: 800px;
+    }
+    .benefits__card {
+        margin: 27px;
+    }
+    .benefits__title {
+        margin: 93px 20px;
+    }
+}
+
+@media(max-width: 700px) {
+    .container {
+        max-width: 500px;
+    }
+    .benefits__card {
+        text-align: center;
+        max-width: 257px;
+        margin: 50px 27px;
+    }
+}
+
+
+/* _____________________INSPIRATION_____________________ */
+
+.inspiration {
+    overflow: auto;
+    text-align: center;
+    position: relative;
+}
+
+.inspiration__title {
+    display: inline-block;
+    width: 80%;
+    font-size: 35px;
+    text-align: left;
+    text-decoration: underline 2px solid #006dfe;
+    text-underline-offset: 10px;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+    margin: 5px;
+}
+
+.img-opacity {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 24, 36, 0.4);
+    z-index: 1;
+}
+
+.img-title {
+    font-size: 50px;
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    bottom: 50px;
+    left: 29px;
+    z-index: 2;
+}
+
+.inspiration__link {
+    vertical-align: text-bottom;
+    float: right;
+    margin: 55px 20px 0;
+    color: #006dfe;
+}
+
+@media(max-width: 900px) {
+    .inspiration {
+        padding-bottom: 200px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .inspiration__title {
+        text-align: center;
+        margin: 0 20px 50px;
+    }
+    .inspiration__link {
+        float: none;
+        position: absolute;
+        bottom: 0;
+        left: 40vw;
+        margin: 50px auto 100px;
+        color: #006dfe;
+    }
+}
+
+@media(max-width: 750px) {
+    .inspiration .container {
+        overflow: hidden;
+    }
+    .fuji-image,
+    .kyoto-image,
+    .tokoyo-image,
+    .nigata-image,
+    .sapporo-image,
+    .tottori-image,
+    .arashiyama-image {
+        max-width: 80vw;
+        width: auto;
+        margin: auto;
+    }
+    .img-title {
+        font-size: 30px;
+    }
+}
+
+
+/* _________________________INSPIRATION ARTICLE________________________ */
+
+.inspiration__article {
+    padding-top: 54px;
+}
+
+.article__card {
+    margin-top: 77px;
+    overflow: auto;
+}
+
+.card__info-1 {
+    display: inline-block;
+}
+
+.card__info-2 {
+    display: inline-block;
+    padding-left: 47px;
+}
+
+.img-left {
+    float: left;
+    padding-right: 108px;
+    line-height: 0;
+}
+
+.img-right {
+    float: right;
+    padding-left: 108px;
+    line-height: 0;
+}
+
+.article__title {
+    font-size: 30px;
+    max-width: 357px;
+    width: auto;
+    margin: 26px 0 0 0;
+}
+
+.article__desc {
+    line-height: 24px;
+    max-width: 519px;
+    width: auto;
+    margin: 45px 0 0 0;
+}
+
+.article__link {
+    width: fit-content;
+    text-align: left;
+    margin: 94px 0 0 0;
+}
+
+@media(max-width: 1500px) {
+    .img-left {
+        float: left;
+        padding: 0 100px 0 10px;
+    }
+    .img-right {
+        float: right;
+        padding-left: 48px;
+    }
+    .article__card {
+        width: fit-content;
+        overflow: hidden;
+        margin: 77px auto 0;
+    }
+    .tottori-image,
+    .arashiyama-image {
+        max-width: 497px;
+        height: auto;
+    }
+    .article__desc {
+        max-width: 419px;
+    }
+    .article__link {
+        margin: 34px 0 0 0;
+    }
+}
+
+@media(max-width: 1200px) {
+    .img-left {
+        float: left;
+        padding: 0 30px 0 10px;
+    }
+    .img-right {
+        float: right;
+        padding-left: 48px;
+    }
+    .card__info-2 {
+        padding: 0;
+    }
+    .article__card {
+        width: fit-content;
+        overflow: hidden;
+        margin: 77px auto 0;
+    }
+    .tottori-image,
+    .arashiyama-image {
+        max-width: 497px;
+        height: auto;
+    }
+    .article__desc {
+        max-width: 419px;
+    }
+    .article__link {
+        margin: 34px 0 0 0;
+    }
+}
+
+@media(max-width: 1000px) {
+    .img-left {
+        float: none;
+        padding: 0;
+    }
+    .img-right {
+        float: none;
+        padding: 0;
+    }
+    .tottori-image,
+    .arashiyama-image {
+        max-width: 60vw;
+        display: block;
+    }
+    .article__desc {
+        max-width: 60vw;
+        display: block;
+    }
+}
+
+@media(max-width: 800px) {
+    .inspiration__article .container {
+        overflow: hidden;
+    }
+    .tottori-image,
+    .arashiyama-image {
+        max-width: 80vw;
+        display: block;
+    }
+    .article__desc {
+        max-width: 80vw;
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .card__info-1 {
+        padding: 0 30px;
+    }
+    .card__info-2 {
+        padding: 0 30px;
+    }
+}
+
+
+/* ____________________VISIT_____________________ */
+
+.visit {
+    margin: 139px 0 0;
+}
+
+.visit .container {
+    overflow: hidden;
+    height: max-content;
+    padding-bottom: 100px;
+}
+
+.visit__card {
+    max-width: 386px;
+    width: auto;
+    display: inline-block;
+}
+
+.visit__header {
+    padding: 0 30px;
+    font-size: 35px;
+    text-decoration: underline 2px solid #006dfe;
+    text-underline-offset: 10px;
+}
+
+.visit__image {
+    position: relative;
+    line-height: 0;
+}
+
+.media__data {
+    position: absolute;
+    color: #fff;
+    bottom: -50px;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(21, 24, 36, 0.6);
+    transition: bottom 0.3s, opacity 0.3s;
+}
+
+.visit__image:hover .media__data {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    opacity: 100%;
+    background-color: rgba(21, 24, 36, 0.6);
+}
+
+.data__title {
+    display: inline-block;
+    margin: 30px 25px;
+}
+
+.data__input .material-icons {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.data__input {
+    color: #fff;
+    display: inline-block;
+    margin: 15px 10px 0 0;
+}
+
+.media__input {
+    float: right;
+}
+
+.media-icons {
+    color: #fff;
+}
+
+.visit__desc {
+    position: relative;
+    background-color: #fff;
+    line-height: 24px;
+    margin: 0 0 25px;
+    padding-top: 25px;
+    text-align: left;
+    z-index: 2;
+}
+
+.visit__divider {
+    margin: 0;
+    height: 25px;
+    border: 0;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.card__side {
+    margin: 58px 0 0;
+}
+
+.card__middle {
+    margin: 58px 58px 0;
+}
+
+.more-icon {
+    font-size: 16px;
+    vertical-align: text-top;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    transition: 0.3s ease-in;
+}
+
+.see-button:hover .more-icon {
+    visibility: visible;
+    font-size: 16px;
+    vertical-align: text-top;
+    opacity: 100%;
+    position: absolute;
+    top: 30%;
+    right: 15px;
+}
+
+.see-button {
+    font-size: 16px;
+    line-height: 0;
+    vertical-align: middle;
+    position: relative;
+    padding: 9.5px 30.5px 13.5px;
+    margin: 5px 0 0;
+    transition: 0.3s ease-in;
+}
+
+.see-button:hover {
+    padding: 9.5px 40.5px 13.5px 20.5px;
+}
+
+@media(max-width: 1300px) {
+    .visit__card {
+        margin: auto;
+    }
+    .visit__card-container {
+        max-width: 900px;
+        width: auto;
+        margin: auto;
+    }
+    .card__side,
+    .card__middle {
+        margin: 50px 28.5px;
+    }
+}
+
+@media(max-width: 911px) {
+    .visit {
+        text-align: center;
+    }
+    .visit__card-container {
+        max-width: 500px;
+    }
+    .data__title {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .data__input {
+        color: #fff;
+        display: inline-block;
+        margin: 15px 10px;
+    }
+    .visit__desc {
+        text-align: center;
+    }
+}
+
+@media(max-width: 464px) {
+    .nagoya-image,
+    .niigita-image,
+    .osaka-image,
+    .saitama-image,
+    .ueno-image,
+    .shibuya-image {
+        width: 80vw;
+        height: auto;
+    }
+    .visit__card {
+        width: 80vw;
+    }
+    .card__side,
+    .card__middle {
+        margin: 80px 0;
+    }
+    .visit__card-container {
+        width: fit-content;
+    }
+    .visit__desc {
+        width: 80vw;
+        width: auto;
+    }
+    .visit__image {
+        width: fit-content;
+        margin: auto;
+    }
+    .card__side,
+    .card__middle {
+        margin: 28.5px 0;
+    }
+}
+
+
+/* __________________FESTIVAL___________________ */
+
+.festival {
+    margin: 144px 0 0;
+    position: relative;
+    line-height: 0;
+}
+
+.play-icon {
+    cursor: pointer;
+    font-size: 112px;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    z-index: 2;
+}
+
+@media(max-width:1000px) {
+    .play-icon {
+        font-size: 80px;
+    }
+}
+
+@media(max-width:700px) {
+    .play-icon {
+        font-size: 60px;
+    }
+}
+
+
+/* ____________________FOOTER______________________ */
+
+.footer {
+    width: 100vw;
+    min-height: 370px;
+    height: auto;
+    line-height: 0;
+    display: inline-block;
+    background-color: #0e1d28;
+}
+
+.footer__logo {
+    display: inline-block;
+    margin: 121px 356px 197px 194px;
+}
+
+.company,
+.location,
+.media {
+    vertical-align: middle;
+    margin-right: 138.5px;
+}
+
+.company__link,
+.location__link,
+.media__link {
+    color: #fff;
+}
+
+.company__link:hover,
+.location__link:hover,
+.media__link:hover {
+    color: rgb(209, 209, 209);
+}
+
+.footer__links {
+    display: inline-block;
+}
+
+.company__li,
+.location__li,
+.media__li {
+    line-height: 24px;
+    margin: 3px 0 0;
+}
+
+@media(max-width: 1520px) {
+    .footer__logo {
+        margin-right: 256px;
+    }
+}
+
+@media(max-width: 1318px) {
+    .footer__logo {
+        margin-right: 156px;
+    }
+    .company,
+    .location,
+    .media {
+        margin-right: 90px;
+    }
+}
+
+@media(max-width: 1035px) {
+    .footer__logo {
+        margin: 121px 50px 197px 134px;
+    }
+}
+
+@media(max-width: 1008px) {
+    .footer__logo {
+        display: block;
+        width: fit-content;
+        margin: 121px auto 107px;
+    }
+    .company,
+    .location,
+    .media {
+        margin-left: 60px;
+    }
+    .footer__links {
+        display: block;
+        width: fit-content;
+        margin: 50px auto;
+    }
+}
+
+@media(max-width: 652px) {
+    .footer__logo {
+        margin: 121px auto 87px;
+    }
+    .company,
+    .location,
+    .media {
+        margin-right: 40px;
+    }
+    .footer__links {
+        width: 400px;
+    }
+}
+
+@media(max-width: 500px) {
+    .company,
+    .location,
+    .media {
+        margin: 20px;
+        text-align: left;
+    }
+    .footer__links {
+        text-align: center;
+        width: 300px;
+    }
+}
